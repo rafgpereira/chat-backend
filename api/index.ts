@@ -4,7 +4,7 @@ const io = require("socket.io")(server, {
   cors: { origin:"https://user-login-system.netlify.app" },
 });
 
-const PORT = 3000;
+const PORT = 10000;
 
 io.on("connection", (socket) => {
   socket.on("set_username", (username) => {

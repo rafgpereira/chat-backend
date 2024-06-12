@@ -5,8 +5,6 @@ const io = require("socket.io")(server, {
 });
 
 const PORT = 3000;
-//Rota pública
-server.get("/", (req, res) => res.send("Express with socket.io on Vercel"));
 
 io.on("connection", (socket) => {
   socket.on("set_username", (username) => {
